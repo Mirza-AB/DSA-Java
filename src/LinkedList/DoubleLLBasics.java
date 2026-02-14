@@ -18,6 +18,7 @@ class DLLNode
         this.next = null;
         this.prev = null;
     }
+
 }
 
 public class DoubleLLBasics
@@ -26,7 +27,7 @@ public class DoubleLLBasics
     {
         //convert arr to DLL
         int[] arr = {1,2,3,4};
-        DLLNode head = ArrayToDll(arr);
+        DLLNode head = arrayToDll(arr);
 //        print(ArrayToDll(arr));
 
         //delete head
@@ -53,7 +54,7 @@ public class DoubleLLBasics
     }
 
     //Convert arr to DLL
-    private static DLLNode ArrayToDll(int[] arr)
+    public static DLLNode arrayToDll(int[] arr)
     {
         DLLNode head = new DLLNode(arr[0]);
         DLLNode mover = head;
@@ -69,7 +70,7 @@ public class DoubleLLBasics
     }
 
     //Print DLL
-    private static void print(DLLNode head)
+    public static void print(DLLNode head)
     {
         DLLNode temp = head;
         while(temp != null)
@@ -80,7 +81,7 @@ public class DoubleLLBasics
     }
 
     //delete head
-    private static DLLNode deleteHead(DLLNode head)
+    public static DLLNode deleteHead(DLLNode head)
     {
         if (head == null || head.next == null) return null;
         DLLNode temp = head;
@@ -93,7 +94,7 @@ public class DoubleLLBasics
     }
 
     //delete tail
-    private static DLLNode deleteTail(DLLNode head)
+    public static DLLNode deleteTail(DLLNode head)
     {
         DLLNode current = head;
 
