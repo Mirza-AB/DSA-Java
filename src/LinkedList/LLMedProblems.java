@@ -2,7 +2,7 @@ package LinkedList;
 
 import java.util.*;
 
-import  LinkedList.LinkedListBasics.*;
+import static LinkedList.LinkedListBasics.*;
 
 public class LLMedProblems
 {

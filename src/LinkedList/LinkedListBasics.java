@@ -4,6 +4,8 @@ class Node
 {
     int data;
     Node next;
+    Node child;
+    Node random;
 
     public Node(int data, Node next)
     {
@@ -16,7 +18,6 @@ class Node
         this.data = data;
         this.next = null;
     }
-
 }
 
 public class LinkedListBasics
